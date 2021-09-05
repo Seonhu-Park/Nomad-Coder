@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+*{
+    margin:0; padding:0;
+}
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+}
+
+body .clock {
+position: absolute;
+left: 50%;
+top: 50%;
+-webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+display:none;
+}
+body .active{
+    display:flex;
+}
+.todo{
+    position:absolute;
+    left:20px; top:20px;
+    border:1px solid #fff;
+    padding:30px;
+    border-radius: 30px;
+    height:80vh;
+    overflow:auto;
+    height:85%;
+}
+
+body .clock .text {
+text-align: center;
+margin: 30px;
+font-family: 'Do Hyeon', sans-serif;
+font-size: 30px;
+color:#fff;
+}
+
+body .clock .circle {
+position: relative;
+width: 200px;
+height: 200px;
+border: 10px solid #fff;
+border-radius: 250px;
+}
+
+body .clock .circle .hour {
+position: absolute;
+left: 50%;
+top: 40px;
+width: 4px;
+height: 60px;
+background: #fff;
+-webkit-transform: translateX(-50%) rotate(120deg);
+        transform: translateX(-50%) rotate(120deg);
+-webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+}
+
+body .clock .circle .min {
+position: absolute;
+left: 50%;
+top: 10px;
+-webkit-transform: translateX(-50%) rotate(0deg);
+        transform: translateX(-50%) rotate(0deg);
+-webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+width: 3px;
+height: 90px;
+background: #fff;
+}
+
+body .clock .circle .sec {
+position: absolute;
+left: 50%;
+top: 10px;
+-webkit-transform: translateX(-50%) rotate(0deg);
+        transform: translateX(-50%) rotate(0deg);
+-webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+width: 2px;
+height: 90px;
+background: #fff;
+}
+#greet{
+    position: absolute;
+    left:50%; top:100px;
+    transform: translateX(-50%);
+    font-size:50px;
+    color:#fff;
+    font-weight: 900;
+}
+.greeting{
+    display:flex;
+    justify-content: center;
+}
+.hidden{
+    display:none;
+}
+#weather{
+    position: absolute;
+    right:20px;
+    top:20px;
+    color:#fff;
+    font-weight: 900;
+}
+form #username{
+    margin-top:100px;
+    background:none;
+    border:0px;
+    border-bottom:1px solid #fff;
+    padding:10px;
+    width:200px;
+    color:#fff;
+}
+input::placeholder{
+    color:#fff;
+    font-weight:900;
+}
+form #todo{
+    background:none;
+    border:0px;
+    border-bottom:1px solid #fff;
+    padding:10px;
+    width:200px;
+    color:#fff;
+}
+
+ul{
+    margin:30px 5px 0 5px;
+}
+ul li{
+    list-style:none;
+    color:#fff;
+    font-size:14px;
+}
+ul li button{
+    background:none;
+    border:0px;
+    color:#fff;
+    padding:10px;
+    line-height: 2;
+    font-weight:900;
+    text-align: center;
+    cursor: pointer;
+}

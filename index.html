@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+    <form class="greeting">
+        <input type="text" placeholder="이름을 입력해주세요." id="username">
+    </form>
+    <p id="greet" class="hidden"></p>
+    <div class="clock active">
+        <div class="text">
+            <span>현재 시간 </span>
+            <span id="now"></span>
+        </div>
+        <div class="circle">
+            <div class="hour"></div>
+            <div class="min"></div>
+            <div class="sec"></div>
+        </div>
+    </div>
+    <div class="todo">
+        <form class="todo-form">
+            <input type="text"
+            placeholder="오늘의 할 일은?"
+            id="todo" required>
+        </form>
+        <ul id="todo-list">
+        </ul>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
